@@ -1,0 +1,232 @@
+{
+    "eventos": [
+        {
+            "id": 1,
+            "tipo_de_esporte": "Futebol",
+            "data": "18/04",
+            "hora": "16:00",
+            "liga": "Europa League",
+            "equipes": {
+                "casa": "Olympique de Marseille",
+                "visitante": "SL Benfica"
+            },
+            "local": "Stade Vélodrome",
+            "cotações": {
+                "vitória_casa": 2.45,
+                "empate": 3.60,
+                "vitória_visitante": 2.95,
+                "placar_exato": [
+                    {
+                        "placar": "2-0",
+                        "cotação": 5.0
+                    },
+                    {
+                        "placar": "2-2",
+                        "cotação": 10.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "tipo_de_esporte": "Futebol",
+            "data": "18/04",
+            "hora": "16:00",
+            "liga": "Europa League",
+            "equipes": {
+                "casa": "Atalanta",
+                "visitante": "Liverpool"
+            },
+            "local": "Atleti Azzurri d'Italia",
+            "cotações": {
+                "vitória_casa": 4.75,
+                "empate": 4.50,
+                "vitória_visitante": 1.62,
+                "placar_exato": [
+                    {
+                        "placar": "2-0",
+                        "cotação": 5.0
+                    },
+                    {
+                        "placar": "2-2",
+                        "cotação": 10.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "tipo_de_esporte": "Futebol",
+            "data": "18/04",
+            "hora": "13:00",
+            "liga": "Premier League",
+            "equipes": {
+                "casa": "Wolves",
+                "visitante": "Arsenal"
+            },
+            "local": "Molineux Stadium",
+            "cotações": {
+                "vitória_casa": 3.20,
+                "empate": 4.35,
+                "vitória_visitante": 1.85,
+                "placar_exato": [
+                    {
+                        "placar": "2-0",
+                        "cotação": 5.0
+                    },
+                    {
+                        "placar": "2-2",
+                        "cotação": 10.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "tipo_de_esporte": "Futebol",
+            "data": "18/04",
+            "hora": "16:00",
+            "liga": "La Liga",
+            "equipes": {
+                "casa": "Real Madrid",
+                "visitante": "Barcelona"
+            },
+            "local": "Santiago Bernabéu",
+            "cotações": {
+                "vitória_casa": 1.90,
+                "empate": 3.80,
+                "vitória_visitante": 3.85,
+                "placar_exato": [
+                    {
+                        "placar": "2-0",
+                        "cotação": 5.0
+                    },
+                    {
+                        "placar": "2-2",
+                        "cotação": 10.0
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "tipo_de_esporte": "Basquete",
+            "data": "19/04",
+            "hora": "20:00",
+            "liga": "NBA",
+            "equipes": {
+                "casa": "Miami Heat",
+                "visitante": "Chicago Bulls"
+            },
+            "local": "Kaseya Center",
+            "cotações": {
+                "vitória_casa": 1.90,
+                "vitória_visitante": 2.20,
+                "placar_exato": [
+                    {
+                        "placar": "Mais de 200",
+                        "cotação": 1.91
+                    },
+                    {
+                        "placar": "Menos de 200",
+                        "cotação": 1.90
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "tipo_de_esporte": "Basquete",
+            "data": "19/04",
+            "hora": "22:30",
+            "liga": "NBA",
+            "equipes": {
+                "casa": "New Orleans Pelicans",
+                "visitante": "Sacramento Kings"
+            },
+            "local": "Smoothie King Center",
+            "cotações": {
+                "vitória_casa": 2.07,
+                "vitória_visitante": 1.78,
+                "placar_exato": [
+                    {
+                        "placar": "Mais de 200",
+                        "cotação": 1.90
+                    },
+                    {
+                        "placar": "Menos de 200",
+                        "cotação": 1.91
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "tipo_de_esporte": "Tênis",
+            "data": "18/04",
+            "hora": "12:00",
+            "liga": "Aberto de Munique",
+            "equipes": {
+                "casa": "Felix Auger Aliassime",
+                "visitante": "Taro Daniel"
+            },
+            "local": "Quadra Central",
+            "cotações": {
+                "vitória_casa": 1.33,
+                "vitória_visitante": 3.35,
+                "placar_exato": [
+                    {
+                        "placar": "2-0",
+                        "cotação": 1.88
+                    },
+                    {
+                        "placar": "2-1",
+                        "cotação": 3.70
+                    },
+                    {
+                        "placar": "1-2",
+                        "cotação": 6.00
+                    },
+                    {
+                        "placar": "0-2",
+                        "cotação": 6.50
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "tipo_de_esporte": "Tênis",
+            "data": "18/04",
+            "hora": "12:20",
+            "liga": "Aberto de Barcelona",
+            "equipes": {
+                "casa": "Roberto Carballes Baena",
+                "visitante": "Stefanos Tsitsipas"
+            },
+            "local": "Pista Rafa Nadal",
+            "cotações": {
+                "vitória_casa": 5.50,
+                "vitória_visitante": 1.15,
+                "placar_exato": [
+                    {
+                        "placar": "2-0",
+                        "cotação": 14.50
+                    },
+                    {
+                        "placar": "2-1",
+                        "cotação": 10.75
+                    },
+                    {
+                        "placar": "1-2",
+                        "cotação": 4.05
+                    },
+                    {
+                        "placar": "0-2",
+                        "cotação": 1.40
+                    }
+                ]
+            }
+        }
+    ]
+}
