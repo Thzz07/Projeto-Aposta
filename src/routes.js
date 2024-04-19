@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Login from "./screens/Login";
 import Home from "./screens/Home";
 import Perfil from "./screens/Perfil";
+import Details from "./screens/Details";
 import { AntDesign, Feather } from "@expo/vector-icons";
 
 const Stack = createNativeStackNavigator();
@@ -45,9 +46,10 @@ function TabRoutes() {
 
 export default function Routes() {
     return (
-        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Login">
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Home" component={TabRoutes} />
+            <Stack.Screen name="Details" component={Details} />
         </Stack.Navigator>
     );
 }
