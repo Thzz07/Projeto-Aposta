@@ -3,14 +3,19 @@ import { useNavigation } from "@react-navigation/native";
 import { Text, TextInput, View, Image, StyleSheet, StatusBar, } from "react-native";
 import CustomButton from "../components/CustomButton";
 import Logo from "../assets/cabra_logo.png";
+import { Ionicons, Entypo } from '@expo/vector-icons';
+import { Almendra_400Regular, useFonts } from "@expo-google-fonts/almendra";
 
 
 export default function Login() {
-    
+
     const [email, setEmail] = useState("");
     const [passoword, setPassoword] = useState("");
     const navigation = useNavigation();
     const credentialsEmail = "aluno@senai.com.br";
+    let [ fontsLoaded] = useFonts({
+        Almendra_400Regular,
+    });
 
 
     const credentialsPassword = "aluno123";
@@ -50,10 +55,6 @@ export default function Login() {
             borderWidth: 1,
             padding: 10,
             fontSize: 20,
-            borderWidth: 1,
-            borderColor: "#eee",
-            backgroundColor: "#3C3838",
-            color: "#ffffff",
         },
         errorText: {
             color: "red",
@@ -65,30 +66,54 @@ export default function Login() {
     return (
         <View style={styles.container}>
             <StatusBar
-            barStyle = "dark-content"
-            hidden = {false}
-            backgroundColor = "#cAD876"
-            translucent = {true}/>
+                barStyle="dark-content"
+                hidden={false}
+                backgroundColor="#cAD876"
+                translucent={true} />
             <Image style={styles.logo} source={Logo} />
-            <Text style={{color:"#ffffff", fontFamily: "", fontSize:50, position:"absolute", marginTop:380}}>Goat.bet</Text>
+            <Text style={{ color: "#ffffff", fontFamily: 'Almendra_400Regular', fontSize: 50, position: "absolute", marginTop: 380 }}>Goat.bet</Text>
+            <View style={{width:"100%", height:1, backgroundColor:"#cAD876"}}></View>
             <Text style={{ color: "#ffffff", fontSize: 17, fontWeight: 'bold', marginBottom: 40, width: "100%" }}>Entre na ação e <Text style={{ color: "#cAD876" }}>aposte</Text> com confiança no nosso site de apostas!</Text>
-            <TextInput
-                style={styles.input}
-                value={email}
-                onChangeText={(text) => setEmail(text)}
-                placeholder="E-Mail"
-                placeholderTextColor="#959ba3"
-                keyboardType="email-address"
-            />
+            <View style={{
+                flexDirection: 'row', marginHorizontal: 16, borderWidth: 1,
+                borderColor: "#eee",
+                backgroundColor: "#3C3838",
+                padding: 10,
+            }}>
+                <Ionicons name="mail" size={24} color="black" />
+                <TextInput
+                    style={{ flex: 1, marginLeft: 16, }}
+                    value={email}
+                    onChangeText={(text) => setEmail(text)}
+                    placeholder="E-Mail"
+                    placeholderTextColor="#959ba3"
+                    keyboardType="email-address"
 
-            <TextInput
-                style={styles.input}
-                value={passoword}
-                onChangeText={(text) => setPassoword(text)}
-                placeholder="Senha"
-                placeholderTextColor="#959ba3"
-                secureTextEntry={true}
-            />
+                />
+            </View>
+
+
+
+
+            <View style={{
+                flexDirection: 'row', marginHorizontal: 16, borderWidth: 1,
+                borderColor: "#eee",
+                backgroundColor: "#3C3838",
+                padding: 10,
+                marginTop: 20,
+            }}>
+                <Entypo name="lock" size={24} color="black" />
+                <TextInput
+                    style={{ flex: 1, marginLeft: 16, }}
+                    value={passoword}
+                    onChangeText={(text) => setPassoword(text)}
+                    placeholder="Senha"
+                    placeholderTextColor="#959ba3"
+                    secureTextEntry={true}
+                />
+            </View>
+
+
             <Text style={{ color: "#ffffff", marginBottom: 15, marginRight: 257, fontSize: 12 }}>Esqueci minha senha</Text>
             <CustomButton title="Entrar" onPress={() => {
                 handleSubmit()
